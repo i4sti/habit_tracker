@@ -1,1 +1,18 @@
-<p>register works!</p>
+<div class="signup">
+    <h1>Sign Up</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password">
+      </div>
+      
+      <div class="form-actions">
+        <button type="submit" class="login-button">Regisztráció</button>
+        <button type="button" [routerLink]="['/login']" class="signup-button">Bejelentkezés</button>
+      </div>
+    </form>
+  </div>

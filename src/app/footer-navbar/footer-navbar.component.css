@@ -1,0 +1,19 @@
+.footer-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:#0E242D ;
+  
+    
+  }
+  
+  .icon {
+    margin: 0 10px;
+    color: rgba(176,176,176,1);
+  }
+  

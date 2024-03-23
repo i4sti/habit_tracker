@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="login-form">
+    <h1>Bejelentkezés</h1>
+  <div class="form">
+      <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" [formControl]="email" />
+    </div>
+    <div class="form-group">
+      <label for="password">Jelszó:</label>
+      <input type="password" [formControl]="password" />
+    </div>
+    <div class="form-actions">
+      <button (click)="login()">Bejelentkezés</button>
+      <button [routerLink]="'/signup'">Regisztráció</button>
+    </div>
+  </div>
+</div>
+
